@@ -1,1 +1,1 @@
-// export * from "./PropertyFeature";
+export * from "./PropertyFeature";
