@@ -3,3 +3,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.font-heading {
+    z-index: 1;
+    color: #fff;
+}
+
+@layer compontents{
+    .btn{
+        @apply bg-pink-500 hover:bg-pink-700 inline-block my-2 p-2 uppercase rounded-md font-bold text-white;
+    }
+}
+.text-color .font-heading{
+    color: black;
+}
+.text-color a{
+    color: white;
+}
