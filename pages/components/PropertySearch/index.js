@@ -1,1 +1,1 @@
-export * from "./PropertySearch";
+export { default } from "./PropertySearch";

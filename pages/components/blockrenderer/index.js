@@ -1,1 +1,1 @@
-export * from "./blockrenderer"
+export { default } from "./blockrenderer"

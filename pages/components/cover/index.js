@@ -1,1 +1,1 @@
-export * from "./cover"
+export { default } from "./cover"
