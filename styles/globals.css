@@ -20,3 +20,6 @@
 .text-color a{
     color: white;
 }
+.sticky{
+    z-index: 35;
+}
