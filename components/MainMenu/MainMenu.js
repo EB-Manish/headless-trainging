@@ -3,7 +3,7 @@ import Link from "next/link";
 import { ButtonLink } from "../ButtonLink/ButtonLink";
 
 export const MainMenu = ({items,callToActionLabel, callToActionDestination}) => {
-  console.log("Main menu: ", items);
+  // console.log("Main menu: ", items);
   return (
     <div className="bg-slate-800 text-white px-5 h-[64px] sticky top-0 z-20 flex">
         <Link href={items[0].destination} className="py-4 pl-5 flex text-pink-600">

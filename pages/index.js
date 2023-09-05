@@ -1,5 +1,5 @@
 import { getPageStaticProps } from "utils/getPageStaticProps";
-import { Page } from "./components/Page/Page";
+import { Page } from "../components/Page/Page";
 
 export default Page;
 

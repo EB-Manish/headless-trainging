@@ -74,7 +74,7 @@ export const BLockRenderer = ({blocks}) =>{
                 );
             }
             case "core/column":{
-                console.log("Column:", block.attributes);
+                // console.log("Column:", block.attributes);
                 return (
                     <Column key={block.id} width={block.attributes.width}
                     textColor={

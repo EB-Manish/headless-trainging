@@ -1,4 +1,4 @@
-import { Input } from "pages/components/input/Input";
+import { Input } from "components/input/Input";
 import { useEffect, useState } from "react";
 import queryString from "query-string";
 
