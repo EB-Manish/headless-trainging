@@ -6,7 +6,7 @@
 
 .font-heading {
     z-index: 1;
-    color: #fff;
+    color: red;
 }
 
 @layer compontents{
