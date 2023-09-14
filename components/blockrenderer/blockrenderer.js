@@ -10,12 +10,16 @@ import { PropertySearch } from "../PropertySearch/PropertySearch";
 import { PropertyFeatures } from "../PropertyFeature/PropertyFeature";
 import { Gallery } from "../Gallery/Gallery";
 import { Tickitem } from "../Tickitem/Tickitem";
+import { FromspreeForm } from "components/FormspreeForm/FormspreeForm";
 
 
 export const BLockRenderer = ({blocks}) =>{
     return blocks.map(block =>{
         // console.log("Block: ",block)
         switch (block.name){
+            case "acf/formspreeform":{
+                return<FromspreeForm key={block.id} formId={block.attributes.data.form_id} />
+            }
             case "acf/propertyfeatures":{
                 return (<PropertyFeatures key={block.id}
                 price={block.attributes.price}
