@@ -20,7 +20,10 @@ export const FromspreeForm = ({formId}) =>{
         field="email"
         errors={state.errors}
       />
-      <textarea className="border-2 border-slate-400 p-1 hover:border-slate-500 my-5"
+      <label htmlFor="message">
+        Message
+      </label>
+      <textarea className="border-2 border-slate-400 p-1 hover:border-slate-500 my-5 block"
         id="message"
         name="message"
       />
