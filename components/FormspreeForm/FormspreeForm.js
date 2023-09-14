@@ -6,7 +6,7 @@ export const FromspreeForm = ({formId}) =>{
       return <p className="max-w-5xl mx-auto my-5">Thanks for joining!</p>;
   }
   return (
-      <form className ="max-w-5xl mx-auto my-5" onSubmit={handleSubmit}>
+      <form className ="max-w-5xl mx-auto my-5 text-black" onSubmit={handleSubmit}>
       <label htmlFor="email">
         Email Address
       </label>
