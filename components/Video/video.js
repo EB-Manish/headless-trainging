@@ -3,7 +3,6 @@ import { YoutubePlayer } from 'components/VideoPlayer/youtubePlayer';
 import React from 'react';
 
 export const Video = ({data}) =>{
-    console.log(data);
     return(<div className="video-wrapper flex justify-between">
       <div className='youtube-wrapper'>
         <h2 className='text-black'>

@@ -7,7 +7,7 @@ const VideoComponent = ({ videoAttachmentId }) => {
     const fetchVideoUrl = async () => {
       try {
         const response = await fetch(
-          `https://manish-chaulagain.draftserver.com/starterkit-v2/wp-json/wp/v2/media/${videoAttachmentId}`
+          `http://localhost/starterkit-v2/wp-json/wp/v2/media/${videoAttachmentId}`
         );
         const videoData = await response.json();
         setVideoUrl(videoData.guid.rendered);

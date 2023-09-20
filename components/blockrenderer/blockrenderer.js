@@ -13,12 +13,16 @@ import { Tickitem } from "../Tickitem/Tickitem";
 import { FromspreeForm } from "components/FormspreeForm/FormspreeForm";
 import { Slider } from "components/Slider/slider";
 import { Video } from "components/Video/video";
+import { ModalBox } from "components/ModalBox/ModalBox";
 
 
 export const BLockRenderer = ({blocks}) =>{
     return blocks.map(block =>{
         // console.log("Block: ",block)
         switch (block.name){
+            case "acf/modal":{
+                return <ModalBox key={block.id} data={block.attributes.data}/>;
+            }
             case "acf/video":{
                 return <Video key={block.id} data={block.attributes.data}/>;
             }
