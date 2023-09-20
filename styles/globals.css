@@ -23,3 +23,11 @@
 .sticky{
     z-index: 35;
 }
+.loader{
+    margin: auto;
+    display: block;
+}
+.slide-image{
+    height: calc(100vh - 64px);
+    object-fit: cover;
+}

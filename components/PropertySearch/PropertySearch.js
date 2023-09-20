@@ -86,7 +86,7 @@ export const PropertySearch = () => {
   return (
     <div>
       {isLoading ? (
-        <div className="text-center my-10">
+        <div className="text-center loader my-10">
           <TailSpin color="#00BFFF" height={50} width={50} />
         </div>
       ) : (
