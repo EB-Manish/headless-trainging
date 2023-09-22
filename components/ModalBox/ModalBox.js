@@ -5,7 +5,7 @@ export const ModalBox = ({data}) =>{
     const title = data.modal_text;
     const image = data.image.url;
     const altName = data.image.title;
-    console.log(altName);
+    // console.log(altName);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const openModal = () => {

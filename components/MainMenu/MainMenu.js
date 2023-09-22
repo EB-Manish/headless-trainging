@@ -16,11 +16,9 @@ export const MainMenu = ({items,callToActionLabel, callToActionDestination}) => 
             key={item.id}
             className="hover:bg-slate-700 cursor-pointer relative group"
           >
-            <div>
               <Link href={item.destination} className="p-5 block">
                 {item.label}
               </Link>
-            </div>
             {!!item.subMenuItems?.length &&(
                 <div className="group-hover:block hidden bg-slate-800 text-right absolute right-0 top-full -mt-3">
                     {item.subMenuItems.map(subMenuItem =>(

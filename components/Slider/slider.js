@@ -11,7 +11,6 @@ import Image from 'next/image';
 SwiperCore.use([Navigation, Pagination, Autoplay,EffectFade]);
 
 export const Slider = ({ data }) => {
-  console.log(data);
   const imageCount = data.slider_image;
   const slides = [];
 
@@ -19,13 +18,13 @@ export const Slider = ({ data }) => {
     const imageUri = data[`slider_image_${i}_image`].url;
     const imageWidth = data[`slider_image_${i}_image`].width;
     const imageHeight = data[`slider_image_${i}_image`].height;
+    const imageTitle = data[`slider_image_${i}_image`].title;
     slides.push(
       <SwiperSlide key={i}>
-        <Image className="slide-image" src={imageUri} height={imageHeight} width={imageWidth} alt={`Slide ${i}`} />
+        <Image className="slide-image" src={imageUri} height={imageHeight} width={imageWidth} alt={imageTitle} />
       </SwiperSlide>
     );
   }
-
   return (
     <Swiper
       navigation

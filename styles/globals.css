@@ -27,9 +27,14 @@
     margin: auto;
     display: block;
 }
-.slide-image{
+.slide-image
+{
     height: calc(100vh - 64px);
     object-fit: cover;
+}
+.map iframe{
+    height: calc(100vh - 64px);
+    width: 100%;
 }
 video{
     width: 100%;
